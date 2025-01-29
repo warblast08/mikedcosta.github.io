@@ -1,0 +1,24 @@
+h1 {
+    color: purple;
+}
+
+table {
+    border: 2px dashed rgb(243, 255, 71);
+    border-collapse: collapse;
+    background-color: lightgray;
+}
+
+th {
+    border: 2px dashed rgb(243, 255, 71);
+    color: black;
+    background-color: turquoise;
+}
+
+td {
+    border: 2px dashed rgb(243, 255, 71);
+    color: green;
+}
+
+body {
+    background-color: grey;
+}
