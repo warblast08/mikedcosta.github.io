@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reza's Page</title>
+    <link rel="stylesheet" href="css/reza.css">
+   
+</head>
+<body>
+    <hr>
+    <header>
+        <h1>Reza's Page</h1>
+        <nav class="navigation">
+            <a href="index.html">Home</a>
+            <a href="Reza.html">Reza</a>
+            <a href="Michael.html">Michael</a>
+            <a href="Bryan.html">Bryan</a>
+        </nav>
+    </header>
+   
+   
+   
+   
+    <div class="container">
+        <div class="arti">
+            <img src="https://upload.wikimedia.org/wikipedia/en/3/30/Red_Deer_CoA.jpg" alt="any pic" >
+            <h2>Red Deer Polytechnic (RDP)</h2>
+            <p>Established in 1964 as Red Deer College, (RDC), the institution was built for a smaller semi-rural community but, in the years since its founding, the city has grown into the third largest in the province.</p>
+            <div class="achievements">
+                <h3>Red Deer Polytechnic offers certificates</h3>
+                <h5>Click on the list to expand</h5>
+                <ul class="main-list">
+                    <li onclick="toggleSublist('list1')">Red Deer Polytechnic Programs
+                        <ul id="list1" class="sublist">
+                           <li>Diplomas</li>
+                           <li>Advanced certificates</li>
+                           <li>Applied degrees</li>
+                        </ul>
+                    </li>
+                    <li onclick="toggleSublist('list2')">Creative Arts
+                        <ul id="list2" class="sublist">
+                            <li>Visual Arts</li> 
+                            <li>Music</li>
+                            <li>Theart Performing</li>
+                        </ul>
+                    </li>
+                    <li onclick="toggleSublist('list3')">Engineering and Trades
+                        <ul id="list3" class="sublist">
+                            <li>Mechanical Engineering</li>
+                            <li>Electrical Engineering</li>
+                            <li>Welding & Plumbing</li>
+                        </ul>
+                    </li>
+                        </ul>
+                                  
+                   
+                
+                <div class="form-container">
+                    <form>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name">
+                
+                        <label for="lastname">Last Name:</label>
+                        <input type="text" id="lastname" name="last_name">
+                
+                        <label for="age">Age:</label>
+                        <input type="number" id="age" name="age" min="1" max="120">
+                
+                        <label for="gender">Gender:</label>
+                        <select id="gender" name="gender">
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+                
+                        <label for="comment">Comment:</label>
+                        <textarea id="comment" name="comment" placeholder="Enter your comment here"></textarea>
+                
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Reset">
+                    </form>
+                
+                    <form>
+                        <label><input type="checkbox" name="vehicle" value="Car" checked> I have a car.</label>
+                        <label><input type="checkbox" name="vehicle" value="Bike" checked> I have a bike.</label>
+                        <label><input type="checkbox" name="vehicle" value="Airplane" checked> I have an airplane.</label>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>\
+
+
+
+
+
+    <script>
+        function toggleSublist(id) {
+            const sublist = document.getElementById(id);
+            sublist.style.display = sublist.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+    
+        
+
+
+
+
+
+        <footer>
+            <p>© 2025 Designed By Reza | Contact Us</p>
+        </footer>
+</body>
+</html>

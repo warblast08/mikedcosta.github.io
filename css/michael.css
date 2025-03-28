@@ -1,0 +1,129 @@
+h1, h3 {
+    text-align: center;
+}
+
+.sect-header, footer {
+    text-align: center;
+    margin-top: 50px;
+}
+
+body {
+    background-color: #11121a;
+    color: white;
+}
+
+main {
+    margin-top: 130px;
+}
+
+.header {
+    border-bottom: 1px solid #42434a;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+    justify-content: center;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    background-color: #11121a;
+}
+
+.navbar-container {
+    display: flex;
+    margin-top: 0px;
+    padding: 0px;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+    gap: 20px;
+}
+
+.navbar-flex-item > a {
+    color: white;
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    gap: 5px;
+}
+
+.img-item {
+    display: block;
+    height: 200px;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px dotted blue;
+}
+
+.pizza-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 150px;
+    width: 150px;
+    padding: 10px;
+    float: right;
+}
+
+.flexbox-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.flex-item {
+    align-self: center;
+    border: 1px solid #42434a;
+    width: 350px;
+    height: 350px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 15px;
+}
+
+.box {
+    border: 1px solid #42434a;
+    column-count: 3;
+    border-radius: 15px;
+    padding: 10px;
+    gap: 20px;
+    column-rule: 1px dotted #42434a;
+}
+
+.container {
+    display: grid;
+    border-radius: 15px;
+    grid-template-areas:
+    'header header header'
+    'side body body'
+    'side footer footer';
+    gap: 20px;
+}
+
+.container > div {
+    text-align: center;
+    border-radius: 15px;
+    border: 1px solid #42434a;
+}
+
+.itemHeader { grid-area: header; }
+.itemSide { 
+    grid-area: side;
+    width: 300px;
+}
+.itemBody { grid-area: body; }
+.itemFooter { grid-area: footer; }
+
+.tblcont {
+    border-radius: 15px;
+    padding: 10px;
+    border: 1px solid #42434a;
+    width: 200px;
+    display: flex;
+    margin: auto;
+    align-items: center;
+}
+
+.tblnav {
+    list-style: none;
+}

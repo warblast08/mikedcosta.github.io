@@ -1,0 +1,291 @@
+:root{
+  --base-clr: #11121a;
+  --line-clr: #42434a;
+  --hover-clr:#222533;
+  --text-clr: #e6e6ef;
+  --accent-clr:#5e63ff;
+  --secondary-text-clr: #b0b3c1;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+html{
+  line-height: 1.5rem;
+}
+
+body{
+  min-height: 100vh;
+  min-height: 100dvh;
+  background-color: var(--base-clr);
+  color: var(--text-clr);
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-areas: 
+  "sidebar main"
+  "sidebar footer"
+  ;
+}
+
+#sidebar{
+  grid-area: sidebar;
+  box-sizing: border-box;
+  height: 100vh;
+  width: 250px;
+  padding: 5px 1em;
+  background-color: var(--base-clr);
+  border-right: 1px solid var(--line-clr);
+  position: sticky;
+  top: 0;
+  align-self: start;
+}
+#sidebar ul{
+  list-style: none;
+}
+
+#sidebar > ul > li:first-child, .page-title{
+  display:flex;
+  justify-content: flex-start;
+  padding: 5px 1em;
+  margin-bottom: 16px;
+  margin-top: 16px;
+}
+
+#sidebar ul li.active a {
+  color: var(--accent-clr);
+}
+
+
+
+#sidebar a, #sidebar.logo{
+  border-radius: .5em;
+  padding: .85em;
+  text-decoration: none;
+  color: var(--text-clr);
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+main{
+  padding: min(30px, 7%);
+  grid-area: main;
+}
+
+footer{
+  grid-area: footer;
+  display: flex;
+  justify-content: center;
+}
+
+main p {
+  color: var(--secondary-text-clr);
+  margin-top: 5px;
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+.container {
+  border: 1px solid var(--line-clr);
+  border-radius: 1em;
+  margin-bottom: 20px;
+  padding: min(3em, 15%)
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: flex-start;
+  grid-template-areas: 
+  "interests main"
+  "list-image main"
+  ;
+  gap: 1em;
+}
+
+/*Style for the first box*/
+.header-box {
+  grid-area: interests;
+  align-self: flex-end;
+  
+}
+
+.list-box {
+  grid-area: list-image;
+}
+
+.u-l, a {
+  list-style: None;
+  color: var(--accent-clr);
+}
+
+
+.content-box {
+  grid-area: main;
+}
+
+/*Style for the second box*/
+
+.header-box-2{
+  grid-area: interests;
+  align-self: flex-end;
+}
+
+.image-box{
+  grid-area: main;
+  align-self: center;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 0.5em;
+}
+
+.content-box-2 {
+  grid-area: list-image;
+}
+
+/*Style for the third Box*/
+
+#container-3{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: flex-start;
+  grid-template-areas: 
+  "image header"
+  "image main"
+  ;
+  gap: 1em;
+}
+
+.header-box-3 {
+  grid-area: header;
+  align-self: flex-end;
+
+}
+
+.content-box-3 {
+  grid-area: main;
+}
+
+.image-box-2 {
+  grid-area: image;
+  align-self: center;
+}
+
+/* Style for multi-column box */
+#multi-column-container{
+  border: 1px solid var(--line-clr);
+  border-radius: 1em;
+  margin-bottom: 20px;
+  padding: min(3em, 15%);
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: 
+  "header"
+  "main"
+  ;
+}
+
+.header-box-4 {
+  grid-area: header;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 1em;
+}
+
+.column-container {
+  grid-area: main;
+  columns: 3;
+  
+}
+
+/* Float-image section */
+.float-image {
+  border: 1px solid var(--line-clr);
+  border-radius: 1em;
+  margin-bottom: 20px;
+  padding: min(3em, 15%);
+}
+
+.dog-image {
+  width: 200px;
+  float: left;
+  margin-right: 15px;
+}
+
+
+
+/* Responsive Section */
+
+@media (max-width: 750px) {
+  body {
+    grid-template-columns: 1fr;
+  }
+
+  main {
+    padding: 2em 1em 60px 1em;
+  }
+
+  #sidebar {
+    height: 60px;
+    width: 100%;
+    border-right: none;
+    border-top: 1px solid var(--line-clr);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #sidebar ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  #sidebar ul li {
+    height: 100%;
+  }
+
+  #sidebar ul li span,
+  #sidebar ul li:first-child {
+    display: none;
+  }
+
+  
+  .container,
+  #container-3 {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+
+  .container img,
+  .image-box-2 img {
+    width: 100%;
+    height: auto;
+  }
+
+  
+  .header-box,
+  .header-box-2,
+  .header-box-3,
+  .header-box-4 {
+    align-self: center;
+    text-align: center;
+  }
+
+  
+  .column-container {
+    columns: 1;
+  }
+}
