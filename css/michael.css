@@ -90,6 +90,19 @@ main {
     column-rule: 1px dotted #42434a;
 }
 
+
+@media (max-width: 1200px) {
+    .box {
+        column-count: 2;
+    }
+}
+
+@media (max-width: 600px) {
+    .box {
+        column-count: 1;
+    }
+}
+
 .container {
     display: grid;
     border-radius: 15px;

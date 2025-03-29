@@ -228,21 +228,20 @@ img {
   }
 
   main {
+    margin-top: 80px;
     padding: 2em 1em 60px 1em;
   }
 
   #sidebar {
-    height: 60px;
+    height: 100px;
     width: 100%;
     border-right: none;
     border-top: 1px solid var(--line-clr);
     position: fixed;
-    bottom: 0;
-    left: 0;
-    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
   }
 
   #sidebar ul {
