@@ -255,7 +255,6 @@ img {
     height: 100%;
   }
 
-  #sidebar ul li span,
   #sidebar ul li:first-child {
     display: none;
   }
