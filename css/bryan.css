@@ -59,7 +59,7 @@ body{
 
 
 
-#sidebar a, #sidebar.logo{
+#sidebar a, #sidebar.logo {
   border-radius: .5em;
   padding: .85em;
   text-decoration: none;
@@ -239,6 +239,7 @@ img {
     border-top: 1px solid var(--line-clr);
     position: fixed;
     display: flex;
+    left: 0px;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -248,7 +249,6 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 8px;
   }
 
   #sidebar ul li {
@@ -257,6 +257,10 @@ img {
 
   #sidebar ul li:first-child {
     display: none;
+  }
+
+  #sidebar a, #sidebar.logo {
+    gap: 5px;
   }
 
   
