@@ -249,6 +249,7 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 20px;
   }
 
   #sidebar ul li {
@@ -261,6 +262,7 @@ img {
 
   #sidebar a, #sidebar.logo {
     gap: 5px;
+    padding: 0px;
   }
 
   
