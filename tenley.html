@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tenley | Travis' Cat Family</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="tenley-theme">
+    <!-- Page header with navigation which remains at top of page -->
+    <header class="fixed-top">
+        <nav class="navbar navbar-ten navbar-expand-lg navbar-light bg-light">
+            <section class="container-fluid">
+                <!-- Title Page for header and a cool mouse hover effect -->
+                <h2 class="navbar-brand">Travis' Cat Family</h2>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <!-- Navigational links to seperate pages that are linked -->
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <!-- Link to Home page -->
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <!-- Link to Maxwell's page -->
+                            <a class="nav-link" href="maxwell.html">Maxwell</a>
+                        </li>
+                        <li class="nav-item">
+                            <!-- Link to Mona's page -->
+                            <a class="nav-link" href="mona.html">Mona</a>
+                        </li>
+                        <li class="nav-item">
+                            <!-- Link to Tenley's page -->
+                            <a class="nav-link active" href="tenley.html">Tenley</a>
+                        </li>
+                        <li class="nav-item">
+                            <!-- Link to Rocky's page -->
+                            <a class="nav-link" href="rocky.html">Rocky</a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </nav>
+    </header>
+    <!-- Main element that includes sidebar and body content -->
+    <main class="container-fluid main-container">
+        <div class="row">
+            <aside class="col-md-3 sidebar sidebar-ten">
+                <div class="sticky-top sidebar-content">
+                    <h3>Tenley's Gallery</h3>
+                    <!-- Cards that display an image and text within contained cards -->
+                    <div class="card">
+                        <img src="images/Tenley/tenley1.jpg" class="card-img-top" alt="Tenley playing">
+                        <div class="card-body">
+                            <p class="card-text">Tenley playing with her favorite fishing rod toy.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="images/Tenley/tenley10.jpg" class="card-img-top" alt="Tenley cuddling">
+                        <div class="card-body">
+                            <p class="card-text">Tenley enjoying cuddle time with Travis.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="images/Tenley/tenley11.jpg" class="card-img-top" alt="Tenley exploring">
+                        <div class="card-body">
+                            <p class="card-text">Tenley exploring her surroundings.</p>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+            <!-- Main content with carousel images and biography -->
+            <section class="col-md-9 main-content">   
+                <h1 class="mb-4 text-center">Tenley</h1>             
+                <div class="row mb-5">
+                    <div class="col">
+                        <!-- Interactive changing images to see more images within a container with buttons to switch left and right -->
+                        <div id="tenleyCarousel" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="images/Tenley/tenley12.jpg" class="d-block w-100" alt="Tenley playing" height="600">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/Tenley/tenley2.jpg" class="d-block w-100" alt="Tenley cuddling" height="600">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/Tenley/tenley5.jpg" class="d-block w-100" alt="Tenley exploring" height="600">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#tenleyCarousel" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#tenleyCarousel" data-bs-slide="next">
+                                <span class="carousel-control-next-icon"></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Biography blog post contained within an article -->
+                <article class="blog-post">
+                    <h2 class="mb-4">Biography</h2>
+                    <p>"Tenley is the cat most recently adopted into my home, and she was about a year old when I got her. She's around 4 years old now – the time sure does fly. After I lost Maxwell, I volunteered at the local animal shelter to help all the kitties who didn't have a home, and every morning when I walked into that room, she came up to me and was super affectionate and interested. I knew immediately: I would adopt this cat!</p>
+                    
+                    <p>She took no time to get adjusted to my home, and is one of the sweetest cats I've ever met. She loves to cuddle and be petted, and never runs out of energy. Her favorite thing to do is carry her fishing rod around at 3AM and meow looking for attention.</p>
+                    
+                    <p>Her and Mona don't get along extremely well, in part because of a clash of personalities. Tenley is very active and outgoing and full of energy, so with a more anxious cat, it just doesn't work well. But overall they've learned to co-exist without issue, so it's fine."</p>
+                </article>
+            </section>
+        </div>
+    </main>
+    <!-- Page footer which persists at the bottom of the page -->
+    <footer class="fixed-bottom bg-light py-3">
+        <div class="container text-center">
+            <p class="mb-0">Page created by Michael D. Images supplied by Travis Cattington.</p>
+        </div>
+    </footer>
+    <!-- Script for allowing the use of bootstrap classes -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
